@@ -1,6 +1,6 @@
 {
-  "name": "form-builder",
-  "short_name": "form-builder",
+  "name": "vue-form-creator",
+  "short_name": "vue-form-creator",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",
