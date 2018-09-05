@@ -1,5 +1,5 @@
 {
-  "name": "form-builder",
+  "name": "vue-blocks",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -49,6 +49,11 @@
     "not ie <= 8"
   ],
   "jest": {
+    "globals": {
+      "vue-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
     "moduleFileExtensions": [
       "js",
       "jsx",
@@ -60,7 +65,8 @@
     "transform": {
       "^.+\\.vue$": "vue-jest",
       ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
-      "^.+\\.tsx?$": "ts-jest"
+      "^.+\\.tsx?$": "ts-jest",
+      "^.+\\.js$": "babel-jest"
     },
     "moduleNameMapper": {
       "^@/(.*)$": "<rootDir>/src/$1"
